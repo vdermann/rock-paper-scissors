@@ -3,38 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Rock Paper Scissors</title>
 </head>
 <body>
+    
+    <header>
+        <h1>ROCK PAPER SCISSORS</h1>
+    </header>
 
-    <!-- 
-        ------------------
-            PSEUDOCODE
-        ------------------
+    <main>
+        <section class="plays">
+            <p>CHOOSE:</p>
+            <div class="choice-btn">
+                <button class="play">👊🏻</button>
+                <button class="play">🖐🏻</button>
+                <button class="play">✌🏻</button>
+            </div>
+        </section>
 
-        - Get Computer Choice.
-            - Create a function named getComputerChoice.
-            - Use the Math.random method and split it in 3 parts for each value.
+        <section class="duel">
+            <div class="side">
+                <p class="player-text">you</p>
+                <p class="human-choice"></p>
+            </div>
+            <div>
+                <p class="score"></p>
+            </div>
+            <div class="side">
+                <p class="player-text">computer</p>
+                <p class="computer-choice"></p>
+            </div>
+        </section>
+        
+        <section class="historial">    
+        </section>
+        
+        <section class="restart">
+        </section>
 
-        - Get Human Choice.
-            - Create a function named getHumanChoice.
-            - Use the prompt method to get the input.
-            - Make it case-insensitive.
-
-        - Tracking Score.   
-            - Create two variables, humanScore and computerScore, and initializes them to 0.
-            - Create a new function named playRound.
-                - Define humanChoice (case-insensitive) and computerChoice as parameters of playRound to take the human and computer choices as arguments.
-                - Use console.log to represent the round winner.
-            - Increment the humanScore or computerScore variable based on the round winner.
-
-        - Duration of the Game.
-            - The game will be played for 5 rounds.
-            - Create a new function named playGame.
-            - Play 5 rounds by calling playRound 5 times inside the playGame function.
-    -->
-
-
+    </main>
 
     <script src="main.js"></script>
 </body>
